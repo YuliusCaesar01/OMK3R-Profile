@@ -12,18 +12,27 @@
 
 <x-navbar></x-navbar>
 
-<article class="py-16 px-1 mx-auto max-w-screen-xl  lg:py-20 border-b gray-500">
-    <h2 class="mb-1 text-3xl tracking-tighter font-bold text-gray-900">Judul Informasi</h2>
+
+    @php
+    // Query untuk mengambil data pengguna menggunakan Eloquent ORM
+    $information = \App\Models\Information::orderBy('tanggal_buat', 'desc')->get();
+     @endphp
+
+    @foreach ($information as $i )
+        
+    
+<article class="py-16 px-1 mx-auto max-w-screen-xl  lg:py-15 border-b gray-500">
+    <a href="/information/{{ $i->id }}" class="hover:underline">
+    <h2 class="mb text-3xl tracking-tighter font-bold text-gray-900">{{ $i->judul }}</h2>
+    </a>
     <div class="text-gray 500 text-base" >
-    1 Januari 2024
+        {{ $i->tanggal_buat}}
     </div>
-    <p class="my-4 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rerum commodi adipisci omnis ratione doloribus
-         dolor provident laborum quia nemo cumque placeat, temporibus, dicta at minus esse molestiae minima. Unde.</p>
+    <p class="my-4 font-light">{{ $i->info }}</p>
     <a href="#" class="font-medium text-blue-500 hover:underline"> Read More &raquo;</a>
 </article>
 
-
-
+@endforeach
 
 </body>
 <x-footer> </x-footer>
