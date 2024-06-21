@@ -21,3 +21,9 @@ yarn-error.log
 .env.example
 composer.lock
 package-lock.json
+package-lock.json
+package-lock.json
+package-lock.json
+package.json
+tailwind.config.js
+src/output.css

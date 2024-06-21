@@ -41,7 +41,7 @@
                 </div>
      </div>
   </section>
-
+  <x-footer> </x-footer>
 </body>
-<x-footer> </x-footer>
+
 </html>
