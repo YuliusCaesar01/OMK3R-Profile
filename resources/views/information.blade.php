@@ -29,7 +29,7 @@
         {{ $i->tanggal_buat}}
     </div>
     <p class="my-4 font-light">{{ $i->info }}</p>
-    <a href="#" class="font-medium text-blue-500 hover:underline"> Read More &raquo;</a>
+    <a href="/information/{id}" class="font-medium text-blue-500 hover:underline"> Read More &raquo;</a>
 </article>
 
 @endforeach

@@ -21,6 +21,9 @@ class Information extends Model
      *
      * @var array
      */
+
+    protected $primaryKey = 'id';
+
     protected $fillable = [
         'judul',
         'tanggal_buat',

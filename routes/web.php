@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SetupController;
 use Illuminate\Support\Arr;
 
 Route::get('/', function () {
@@ -17,6 +18,8 @@ Route::get('/about', function () {
 Route::get('/information', function () {
     return view('information');
 })->name('information');
+
+Route::get('/information/{id}', [SetupController::class, 'viewinformation'])->name('information.view');
 
 // Gallery
 Route::get('/gallery', function () {
