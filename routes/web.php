@@ -21,6 +21,7 @@ Route::get('/information', function () {
 
 Route::get('/information/{id}', [SetupController::class, 'viewinformation'])->name('information.view');
 
+
 // Gallery
 Route::get('/gallery', function () {
     return view('gallery');
@@ -31,20 +32,26 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
-
+// Dashboard Admin
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-//content
+//content | Information Admin
 Route::get('/content', function () {
     return view('layouts.content');
 })->middleware(['auth'])->name('content');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('createinformation', [SetupController::class, 'createinformation'])->name('createinformation');
+    Route::post('storeinformation', [SetupController::class, 'storeinformation'])->name('storeinformation');
+    Route::get('information/{id}/edit', [SetupController::class, 'editinformation'])->name('editinformation');
+    Route::put('information/{id}', [SetupController::class, 'updateinformation'])->name('updateinformation');
+    Route::delete('deleteinformation/{id}', [SetupController::class, 'deleteinformation'])->name('deleteinformation');
 });
 
 

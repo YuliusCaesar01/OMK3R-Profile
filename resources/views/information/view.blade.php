@@ -1,9 +1,16 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Information Details') }}
-        </h2>
-    </x-slot>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OMK3R</title>
+    <link rel="icon" href="{{ asset('favicon.co.jpg') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+<body>
+
+<x-navbar></x-navbar>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -14,9 +21,12 @@
                         {{ $information->tanggal_buat }}
                     </div>
                     <p class="my-4 font-light">{{ $information->info }}</p>
-                    <a href="#" class="font-medium text-blue-500 hover:underline">Read More &raquo;</a>
+                    <a href="/information" class="font-medium text-blue-500 hover:underline">&laquo; Back </a>
                 </div>
             </div>
         </div>
     </div>
-</x-app-layout>
+
+</body>
+<x-footer> </x-footer>
+</html>
