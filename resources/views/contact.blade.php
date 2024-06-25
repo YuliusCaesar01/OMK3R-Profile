@@ -34,7 +34,7 @@
             </div>        
         </form>
         <div class="mt-8 text-center">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Follow Us</h3>
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Connect with Us</h3>
             <p class="text-gray-500 dark:text-gray-400">Stay connected with us on social media!</p>
             <div class="flex justify-center space-x-6 mt-4">
                 <a href="https://www.instagram.com/omk3r" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
@@ -54,8 +54,10 @@
             </div>
         </div>
     </div>
+
+    <x-footer></x-footer>
 </section>
 
-<x-footer></x-footer>
+
 </body>
 </html>

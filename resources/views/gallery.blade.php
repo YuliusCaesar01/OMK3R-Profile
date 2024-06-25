@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,52 +10,52 @@
     
     <style>
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .container {
-            width: 1400px;
-            margin: 20px auto;
-            columns: 4;
-            display: grid;
-            gap: 15px;
-            padding: 15px;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            grid-auto-rows: masonry;
-        }
+.container {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
 
-        .container img {
-            width: 100%;
-            display: block;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
+.container img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
 
-        @media (max-width: 1200px) {
-            .container {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            }
-        }
+@media (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
 
-        @media (max-width: 992px) {
-            .container {
-                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            }
-        }
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
 
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            }
-        }
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
 
-        @media (max-width: 576px) {
-            .container {
-                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            }
-        }
+@media (max-width: 576px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -88,7 +89,6 @@
     <img src="{{ asset('img/24.png') }}" class="box"  alt="Image 24">
     <img src="{{ asset('img/25.png') }}" class="box"  alt="Image 25">
     <img src="{{ asset('img/26.png') }}" class="box"  alt="Image 26">
-
 </div>
 
 <x-footer></x-footer>
