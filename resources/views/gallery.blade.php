@@ -64,14 +64,14 @@
 
 <div class="container">
     <img src="{{ asset('img/1.jpg') }}" class="box"  alt="Image 1">
-    <img src="{{ asset('img/2.jpg') }}" class="box"  alt="Image 2">
-    <img src="{{ asset('img/3.jpg') }}" class="box"  alt="Image 3">
-    <img src="{{ asset('img/4.jpg') }}" class="box"  alt="Image 4">
+    <img src="{{ asset('img/6.jpg') }}" class="box"  alt="Image 2">
+    <img src="{{ asset('img/7.jpg') }}" class="box"  alt="Image 3">
+    <img src="{{ asset('img/8.jpg') }}" class="box"  alt="Image 4">
     <img src="{{ asset('img/5.jpg') }}" class="box"  alt="Image 5">
-    <img src="{{ asset('img/6.jpg') }}" class="box"  alt="Image 6">
-    <img src="{{ asset('img/7.jpg') }}" class="box"  alt="Image 7">
-    <img src="{{ asset('img/8.jpg') }}" class="box"  alt="Image 8">
-    <img src="{{ asset('img/9.jpg') }}" class="box"  alt="Image 9">
+    <img src="{{ asset('img/2.jpg') }}" class="box"  alt="Image 6">
+    <img src="{{ asset('img/3.jpg') }}" class="box"  alt="Image 7">
+    <img src="{{ asset('img/4.jpg') }}" class="box"  alt="Image 8">
+    <img src="{{ asset('img/5.jpg') }}" class="box"  alt="Image 9">
     <img src="{{ asset('img/10.png') }}" class="box"  alt="Image 10">
     <img src="{{ asset('img/11.png') }}" class="box"  alt="Image 11">
     <img src="{{ asset('img/12.png') }}" class="box"  alt="Image 12">
