@@ -9,8 +9,8 @@
 
         <!-- Flowbite JS -->
             <link rel="icon" href="{{ asset('favicon.co.jpg') }}">
-            <link rel="stylesheet" href="https://unpkg.com/@flowbite/core/releases/v1.5.1/flowbite.min.css" />
-            <script src="https://unpkg.com/@flowbite/core/releases/v1.5.1/flowbite.min.js"></script>  
+            <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -37,5 +37,7 @@
                 {{ $slot }}
             </main>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
     </body>
 </html>
