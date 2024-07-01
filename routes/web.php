@@ -21,7 +21,6 @@ Route::get('/information', function () {
 
 Route::get('/information/{id}', [SetupController::class, 'viewinformation'])->name('information.view');
 
-
 // Gallery
 Route::get('/gallery', function () {
     return view('gallery');
@@ -31,6 +30,8 @@ Route::get('/gallery', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
+Route::post('contact.send', [MessageController::class, 'sendMessage'])->name('contact.send');
 
 // Dashboard Admin
 Route::get('/dashboard', function () {
@@ -52,6 +53,8 @@ Route::middleware('auth')->group(function () {
     Route::get('information/{id}/edit', [SetupController::class, 'editinformation'])->name('editinformation');
     Route::put('information/{id}', [SetupController::class, 'updateinformation'])->name('updateinformation');
     Route::delete('deleteinformation/{id}', [SetupController::class, 'deleteinformation'])->name('deleteinformation');
+    Route::get('message', [MessageController::class, 'index'])->name('message');
+    
 });
 
 

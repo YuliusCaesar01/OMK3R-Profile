@@ -17,25 +17,26 @@
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Yuk Gabung OMK!</h2>
         <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Tertarik untuk bergabung dengan kami?  Hubungi kami menggunakan formulir atau Hubungi kami melalui Whatsapp dibawah ini.</p>
         <form action="#" method="POST" class="space-y-8">
+            @csrf
             <div>
-                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
-                <input type="text" id="name" name="name" class="block w-full p-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nama</label>
+                <input type="text" id="nama" name="name" class="block w-full p-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
             </div>
             <div>
-                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Email</label>
-                <input type="email" id="email" name="email" class="block w-full p-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+                <label for="no" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nomor Whatsapp</label>
+                <input type="text" id="no_wa" name="no" class="block w-full p-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
             </div>
             <div>
-                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Message</label>
-                <textarea id="message" name="message" rows="6" class="block w-full p-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Tell us how you want to join or any other inquiries..." required></textarea>
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="6" class="block w-full p-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Beritahu kami bagaimana Anda ingin bergabung atau pertanyaan lainnya..." required></textarea>
             </div>
             <div class="flex justify-center items-center">
                 <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send</button>
             </div>        
         </form>
         <div class="mt-8 text-center">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Connect with Us</h3>
-            <p class="text-gray-500 dark:text-gray-400">Stay connected with us on social media!</p>
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Hubungi Kami</h3>
+            <p class="text-gray-500 dark:text-gray-400">Bisa Hubungi kami di Instagram atau Whatsapp dibawah ini ya !</p>
             <div class="flex justify-center space-x-6 mt-4">
                 <a href="https://www.instagram.com/omk3r" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
                     <svg class="w-[42px] h-[42px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
